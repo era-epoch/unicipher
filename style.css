@@ -1,0 +1,67 @@
+encoder {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  textarea {
+    width: min(95vw, 400px);
+    height: 8rem;
+  }
+  select {
+    height: fit-content;
+    padding: 1rem;
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 600px) {
+  encoder {
+    flex-direction: column;
+  }
+}
+
+#app {
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+ruleset {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 4rem;
+  row-gap: 0.5rem;
+}
+
+rule {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  input {
+    text-align: center;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+}
+
+menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+#ruleset-name {
+  width: min(100%, 400px);
+}
