@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>unicode character converter</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="era" />
+    <meta name="theme-color" content="#111111" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://eracodes.net/images/eracodeslogov2_512.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://eracodes.net/images/eracodeslogov2_512.png"
+    />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="convert unicode text to other unicode text for simple ttrpg alphabet ciphers"
+    />
+    <meta
+      property="og:description"
+      content="convert unicode text  to other unicode text for simple ttrpg alphabet ciphers"
+    />
+    <meta
+      name="keywords"
+      content="era, eracodes, alphabet, encode, encoder, cipher, cypher"
+    />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="image_src" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-CBwFkxY3.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-EQIWROy2.css">
+  </head>
+  <body>
+    <app id="app">
+      <encoder>
+        <textarea
+          placeholder="Input lorem ipsum ..."
+          id="text-to-encode"
+          title="Paste or type the text you wish to encode using the specified ruleset"
+          onchange="convert"
+        ></textarea>
+        <select
+          id="select-ruleset"
+          title="Select ruleset used for encoding"
+        ></select>
+        <textarea
+          placeholder="Output lorem ipsum ..."
+          id="encoded-text"
+          title="Encoded text is output here"
+        ></textarea>
+      </encoder>
+      <h1>Ruleset</h1>
+      <menu>
+        <input type="text" id="ruleset-name" title="ruleset name" />
+        <button id="randomize">Randomize mappings</button>
+        <button id="save">Save locally</button>
+        <button id="copy">Copy JSON to clipboard</button>
+      </menu>
+      <ruleset id="new-ruleset"></ruleset>
+    </app>
+  </body>
+</html>
